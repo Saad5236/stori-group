@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Webpack</title>
+
+    <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-transparent py-2">
+      <div class="container border position-relative py-2">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav w-100 justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary rounded-pill py-1 px-3"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary rounded-pill py-1 px-3"
+                href="./portfolio.html"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-flex align-items-center">
+              <a class="navbar-link" href="#"
+                ><img
+                  src="./assets/images/pictures/logo.png"
+                  width="150px"
+                  alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary rounded-pill py-1 px-3" href="#"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary rounded-pill py-1 px-3" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <a
+          class="navbar-brand d-block d-lg-none position-absolute start-50 translate-middle"
+          href="#"
+        >
+          <img src="./assets/images/pictures/logo.png" width="150px" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <main class="home-main">
+      <section class="home-hero">
+        <div class="container pt-5">
+          <div class="text-center">
+            <h1 class="m-0 fw-semibold text-primary">Grow your Brand</h1>
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 mb-4"
+            >
+              <img
+                src="./assets/images/pictures/home-hero-network-pill.png"
+                alt=""
+                class="home-hero-pill-img"
+              />
+              <h1 class="m-0 fw-semibold text-primary">With Us</h1>
+            </div>
+          </div>
+
+          <p class="text-center fst-italic fw-semibold mb-4">
+            WE MAKE SCROLL STOPPING VIDEOS FOR EXPLOSIVE SOCIAL<br />GROWTH
+          </p>
+
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <button
+              class="w-151px btn btn-secondary rounded-pill py-3 text-primary fw-semibold"
+            >
+              BOOK A CALL
+            </button>
+            <button
+              class="w-151px btn btn-outline-primary rounded-pill py-3 text-primary fw-semibold"
+            >
+              PRICING
+            </button>
+          </div>
+
+          <div
+            class="home-hero-video position-relative ratio ratio-16x9 overflow-hidden rounded-5"
+          >
+            <img
+              class="object-fit-cover"
+              src="./assets/images/pictures/home-hero-video-play.png"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+            <a href="#">
+              <img
+                class="play-icon-img position-absolute-center"
+                src="./assets/images/icons/play.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="for-brands-and-creators overflow-hidden">
+        <div class="container">
+          <div class="d-flex gap-5">
+            <div>
+              <h2 class="m-0 mb-3">For Creators & Brands</h2>
+              <p class="fw-medium">
+                Our strategists and world class video editors help to create
+                scroll stopping video content at scale.
+              </p>
+              <button
+                class="w-151px btn btn-secondary rounded-pill py-3 text-primary fw-semibold"
+              >
+                BOOK A CALL
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center overflow-visible gap-3">
+              <div
+                class="position-relative for-brands-and-creators-img rounded-5 overflow-hidden"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/home-for-creators-and-brands-img-1.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+                <img
+                  class="play-icon-img position-absolute-center"
+                  src="./assets/images/icons/play.svg"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="position-relative for-brands-and-creators-img rounded-5 overflow-hidden"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/home-for-creators-and-brands-img-2.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+                <img
+                  class="play-icon-img position-absolute-center"
+                  src="./assets/images/icons/play.svg"
+                  alt=""
+                />
+              </div>
+
+              <div
+                class="position-relative for-brands-and-creators-img rounded-5 overflow-hidden"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/home-for-creators-and-brands-img-1.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+                <img
+                  class="play-icon-img position-absolute-center"
+                  src="./assets/images/icons/play.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-recent-work overflow-hidden">
+        <div class="container">
+          <h2 class="m-0 mb-3">Recent Work</h2>
+          <p class="fw-medium">
+            Our strategists and world class video editors help to create scroll
+            stopping video content at scale.
+          </p>
+
+          <div class="d-flex gap-4">
+            <img
+              class="home-recent-work-img object-fit-cover rounded-4"
+              src="./assets/images/pictures/home-recent-work-1.jpeg"
+              alt=""
+            />
+            <img
+              class="home-recent-work-img object-fit-cover rounded-4"
+              src="./assets/images/pictures/home-recent-work-2.jpeg"
+              alt=""
+            />
+            <img
+              class="home-recent-work-img object-fit-cover rounded-4"
+              src="./assets/images/pictures/home-recent-work-3.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="home-our-services">
+        <div class="container">
+          <h2 class="mb-5 text-dull-black text-center">Our Services</h2>
+
+          <ul class="m-0 list-unstyled border-bottom">
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Instagram Reels</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom active">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Tiktoks</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Website Videos</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Youtube Shorts</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Social Media Ads</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >‘’About us’’ videos</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Event Recap Videos</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+
+            <li class="home-service position-relative border-bottom">
+              <a class="text-decoration-none fw-semibold d-block py-3" href="#!"
+                >Custom Jobs</a
+              >
+
+              <div
+                class="position-absolute home-service-banner-img overflow-hidden rounded-5"
+              >
+                <img
+                  class="object-fit-cover"
+                  src="./assets/images/pictures/our-service-banner.png"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="home-process position-relative">
+        <div class="container">
+          <img
+            class="home-process-bg-hexagon position-absolute end-0"
+            src="./assets/images/pictures/home-bg-hexagon-1.png"
+            alt=""
+          />
+          <h2 class="mb-5 text-dull-black text-center">Process</h2>
+
+          <div class="home-process-steps">
+            <div class="home-process-step text-center">
+              <h4 class="fw-semibold text-dull-black mb-3">
+                Select the plan that works best for your needs
+              </h4>
+              <p class="m-0 text-grey">
+                We’ll help determine your needs based on factors like company
+                size, near-term growth goals, and budget. We will also discuss
+                if you will be providing footage or need to schedule a shoot
+                with our production team.
+              </p>
+            </div>
+
+            <div class="home-process-step text-center">
+              <h4 class="fw-semibold text-dull-black mb-3">
+                Schedule your strategy session
+              </h4>
+              <p class="m-0 text-grey">
+                Each package comes with at least one strategy call with your
+                project manager to strategize the most effective way to create
+                and distribute your video content.
+              </p>
+            </div>
+
+            <div class="home-process-step text-center">
+              <h4 class="fw-semibold text-dull-black mb-3">
+                Chat with our team and submit requests via slack
+              </h4>
+              <p class="m-0 text-grey">
+                During your onboarding process we will onboard you into our
+                Slack channel. During business hours, you have on-demand access
+                to our team to chat about your project and submit any requests.
+              </p>
+            </div>
+
+            <div class="home-process-step text-center">
+              <h4 class="fw-semibold text-dull-black mb-3">
+                We edit and bring your vision to reality!
+              </h4>
+              <p class="m-0 text-grey">
+                Our team review all the notes from our strategy session to
+                actualize your custom social media video content strategy to
+                create social media content that works perfectly for your brand.
+              </p>
+            </div>
+
+            <div class="home-process-step text-center">
+              <h4 class="fw-semibold text-dull-black mb-3">
+                Review your content
+              </h4>
+              <p class="m-0 text-grey">
+                You review your content and request any adjustments to your
+                social media videos.
+              </p>
+            </div>
+
+            <div class="home-process-step text-center">
+              <h4 class="fw-semibold text-dull-black mb-3">
+                Download and enjoy your content!
+              </h4>
+              <p class="m-0 text-grey">
+                Get to posting your video content and engaging with your
+                audience! Please inquire with us if you have any social media
+                management needs!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-pricing position-relative">
+        <div class="container">
+          <img
+            class="home-pricing-bg-triange position-absolute start-0"
+            src="./assets/images/pictures/home-bg-triangle-2.png"
+            alt=""
+          />
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="text-dull-black m-0">Pricing</h2>
+            <button
+              class="w-151px btn btn-secondary rounded-pill py-3 text-primary fw-semibold"
+            >
+              BOOK A CALL
+            </button>
+          </div>
+
+          <div class="home-pricing-cards">
+            <div class="bg-primary p-3 pb-4 rounded-4">
+              <div
+                class="bg-dark-grey d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 text-white py-5"
+              >
+                <div>Good</div>
+                <div class="d-flex align-items-center">
+                  <h3 class="fw-semibold">$1250</h3>
+                  <span>/month</span>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary rounded-pill py-3 text-primary fw-semibold mt-2 w-100"
+              >
+                GET STARTED
+              </button>
+              <ul class="list-unstyled mb-0 mt-4 mx-3 mx-md-4">
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">6-10x Edits</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">1x strategy call</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">editing style</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">Dedicated Project manager</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >Expert video editor and animator</span
+                  >
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-start gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >Make video requests with our slack channel</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-primary p-3 pb-4 rounded-4 position-relative">
+              <img
+                class="position-absolute start-50 translate-middle-x home-pricing-card-popular-badge"
+                src="./assets/images/pictures/home-popular-badge.png"
+                alt=""
+                width="120px"
+              />
+              <div
+                class="bg-dark-grey d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 text-white py-5"
+              >
+                <div>Better</div>
+                <div class="d-flex align-items-center">
+                  <h3 class="fw-semibold">$1999</h3>
+                  <span>/month</span>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary rounded-pill py-3 text-primary fw-semibold mt-2 w-100"
+              >
+                GET STARTED
+              </button>
+              <ul class="list-unstyled mb-0 mt-4 mx-3 mx-md-4">
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">12-16 Edits Per Month</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">2x strategy calls</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">Dedicated Project manager</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >Expert video editor and animator</span
+                  >
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-start gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >Make video requests with our slack channel</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-primary p-3 pb-4 rounded-4">
+              <div
+                class="bg-dark-grey d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 text-white py-5"
+              >
+                <div>Best</div>
+                <div class="d-flex align-items-center">
+                  <h3 class="fw-semibold">$3125</h3>
+                  <span>/month</span>
+                </div>
+              </div>
+              <button
+                class="btn btn-secondary rounded-pill py-3 text-primary fw-semibold mt-2 w-100"
+              >
+                GET STARTED
+              </button>
+              <ul class="list-unstyled mb-0 mt-4 mx-3 mx-md-4">
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">20-25x Edits</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">2x strategy calls</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >On demand slack huddle conversation</span
+                  >
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end">Dedicated Project manager</span>
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-center gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >Expert video editor and animator</span
+                  >
+                </li>
+
+                <li
+                  class="text-dull-white d-flex align-items-start gap-3 py-3 border-bottom border-dark-grey"
+                >
+                  <img src="./assets/images/icons/green-tick.svg" alt="" />
+                  <span class="align-self-end"
+                    >Make video requests with our slack channel</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-add-ons position-relative">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2 class="text-dull-black m-0">Add Ons</h2>
+            <button
+              class="w-151px btn btn-secondary rounded-pill py-3 text-primary fw-semibold"
+            >
+              BOOK A CALL
+            </button>
+          </div>
+
+          <div>
+            <div
+              class="py-3 px-4 bg-dark-grey text-white d-flex justify-content-between rounded-2 mb-4"
+            >
+              <h5 class="m-0 fw-semibold">Add Ons</h5>
+              <h5 class="m-0 fw-semibold">Pricing</h5>
+            </div>
+
+            <ul class="m-0 list-unstyled d-grid gap-3 fw-light">
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">1 off short form edit ‘standard’ edit</p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$125</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">1 off short form ‘premium’ edit</p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$249</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">1 off long form edit</p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$549</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">Virtually directed shoot</p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$80</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">Monthly Social Media Management</p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$899</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">Social Media Branding Kickstart</p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$499</h5>
+                  /per edit
+                </div>
+              </li>
+            </ul>
+
+            <h6 class="ms-4 mb-3 mt-5 fw-medium">
+              Have a Stori Group shoot priced per day:
+            </h6>
+
+            <ul class="m-0 list-unstyled d-grid gap-3 fw-light">
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">
+                  stripped down crew, one camera, simple lighting and audio gear
+                </p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$799</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">
+                  2 to 3 crew members, multiple cameras, enhanced lighting and
+                  audio gear, drone available
+                </p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$1599</h5>
+                  /per edit
+                </div>
+              </li>
+
+              <li
+                class="py-3 px-4 rounded-2 d-flex justify-content-between align-items-center text-primary bg-offwhite"
+              >
+                <p class="m-0">
+                  Large Production - 3+ crew members, several cameras, enhanced
+                  lighting and audio equipment, drone available
+                </p>
+                <div class="d-flex">
+                  <h5 class="m-0 fw-semibold">$2399</h5>
+                  /per edit
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-testimonisals">
+        <div class="container">
+          <div class="bg-primary rounded-5 p-3">
+            <div class="bg-offwhite rounded-4 py-5 text-center">
+              <h2 class="text-dull-black mb-5">Testimonials</h2>
+              <ul
+                class="testimonials-profile-imgs list-unstyled mb-4 d-flex justify-content-center align-items-center gap-2 gap-md-5"
+              >
+                <li class="p-1 bg-secondary rounded-circle">
+                  <img
+                    class="object-fit-cover rounded-circle"
+                    src="./assets/images/pictures/home-testimonial-profile-1.png"
+                    alt=""
+                  />
+                </li>
+
+                <li class="p-1 bg-secondary rounded-circle">
+                  <img
+                    class="object-fit-cover rounded-circle"
+                    src="./assets/images/pictures/home-testimonial-profile-1.png"
+                    alt=""
+                  />
+                </li>
+
+                <li class="p-1 bg-secondary rounded-circle">
+                  <img
+                    class="object-fit-cover rounded-circle"
+                    src="./assets/images/pictures/home-testimonial-profile-1.png"
+                    alt=""
+                  />
+                </li>
+
+                <li class="p-1 bg-secondary rounded-circle">
+                  <img
+                    class="object-fit-cover rounded-circle"
+                    src="./assets/images/pictures/home-testimonial-profile-1.png"
+                    alt=""
+                  />
+                </li>
+
+                <li class="p-1 bg-secondary rounded-circle">
+                  <img
+                    class="object-fit-cover rounded-circle"
+                    src="./assets/images/pictures/home-testimonial-profile-1.png"
+                    alt=""
+                  />
+                </li>
+              </ul>
+
+              <p class="fw-light mb-4 mw-600px mx-auto">
+                Lorem ipsum dolor sit amet consectetur. Turpis scelerisque
+                faucibus nunc feugiat quis magna. Vitae nunc urna in enim
+                ullamcorper. Proin bibendum ut interdum molestie nunc.
+              </p>
+
+              <h6 class="text-dull-black m-0 fw-semibold">Larry Wwinset</h6>
+              <div class="text-black">digital project manager</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-faqs">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-12 col-md-5">
+              <h2 class="m-0 mb-3 text-black">FAQs</h2>
+              <p class="fw-medium">
+                Have questions? We have answers. Don’t see something you need
+                answered? Email us on <a href="#">support@storigroup.tv</a>
+              </p>
+              <button
+                class="w-151px btn btn-secondary rounded-pill py-3 text-primary fw-semibold"
+              >
+                CONTACT
+              </button>
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      How long will it take to receive my videos?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Why is there a range of videos in your packages and not
+                      one set number?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      What is the role of my project manager?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      Do you have guidance on how to shoot my videos?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      Can STORi GROUP do a shoot for me?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
+                      What if I don’t like my video?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingSix"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingSeven">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSeven"
+                    >
+                      What if I select a package but realize I don’t have the
+                      amount of raw footage needed to create the number of
+                      videos in that package?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingSeven"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingEight">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseEight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseEight"
+                    >
+                      Am I locked into a monthly subscription?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseEight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingEight"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingNine">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseNine"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseNine"
+                    >
+                      How do I submit my content?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseNine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingNine"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item bg-transparent border-bottom border-black"
+                >
+                  <h2 class="accordion-header" id="flush-headingTen">
+                    <button
+                      class="accordion-button bg-transparent px-0 shadow-none collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTen"
+                    >
+                      Where are you based?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTen"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body px-0">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-panel-section">
+        <div class="container">
+          <div class="book-panel bg-primary py-4 text-center rounded-5">
+            <h4 class="fw-semibold text-white mb-3">
+              Use our professional creative team to grow your brand on social
+              media
+            </h4>
+            <p class="text-white fw-light mb-3">
+              Fast turn around times, world class creative, and social media
+              growth.
+            </p>
+            <button
+              class="w-151px btn btn-secondary rounded-pill py-3 text-primary fw-semibold"
+            >
+              BOOK A CALL
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary mt-5">
+      <div class="container pt-4 pb-3 d-flex flex-column flex-md-row gap-5">
+        <div>
+          <img
+            src="./assets/images/pictures/white-logo.png"
+            alt=""
+            width="100px"
+          />
+          <p class="text-white mt-3 mb-4">
+            Lorem ipsum dolor sit amet consectetur. Adipiscing vestibulum id
+            feugiat nunc scelerisque eleifend leo volutpat a. Ipsum tellus nisl
+            eleifend erat non volutpat id.
+          </p>
+          <ul class="list-unstyled d-flex align-items-center gap-3 m-0">
+            <li>
+              <a class="text-grey text-decoration-none" href="#">home</a>
+            </li>
+            <li>
+              <a class="text-grey text-decoration-none" href="#">projects</a>
+            </li>
+            <li>
+              <a class="text-grey text-decoration-none" href="#">about</a>
+            </li>
+            <li>
+              <a class="text-grey text-decoration-none" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div>
+            <h6 class="text-grey mb-2">Address</h6>
+            <p class="text-white m-0 text-nowrap">
+              901. Market ST.<br />
+              philadelphia, PA 19107
+            </p>
+          </div>
+
+          <div class="mt-4">
+            <h6 class="text-grey mb-2">Contact</h6>
+            <p class="text-white m-0 text-nowrap">
+              901. Market ST.<br />
+              philadelphia, PA 19107
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-3 border-top border-grey">
+        <a
+          class="text-decoration-none text-white text-center d-block fw-light"
+          href="#"
+          >terms of use</a
+        >
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

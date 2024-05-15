@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/60021318/what-is-the-right-way-to-configure-multiple-pages-in-webpack#:~:text=Better%20yet%2C%20you%20can%20create%20a%20utils%20folder,as%20many%20pages%20as%20you%20want%20easily%20enough.
